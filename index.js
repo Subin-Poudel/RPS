@@ -1,17 +1,3 @@
-// ask user for his input 
-// turn that shit into lowercase
-// generate random numbers
-// based on numbers make the computer play a hand
-// compare those shits
-// declare winner/loser
-// update the scores
-// 
-//
-// do this shit 5 times 
-//
-// print the scores
-//
-
 let humanScore = 0, computerScore = 0;
 
 function getComputerChoice() {
