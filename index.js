@@ -36,6 +36,8 @@ function displayWinner() {
   winner.appendChild(para);
   winner.appendChild(reset);
 
+  disableButtons();
+
   reset.addEventListener("click", gameReset);
 }
 
@@ -54,6 +56,19 @@ function gameReset() {
     winner.removeChild(winner.firstChild);
   }
 
+  enableButtons();
+}
+
+function disableButtons() {
+  btn.forEach(choice => {
+    choice.disabled = true;
+  });
+}
+
+function enableButtons() {
+  btn.forEach(choice => {
+    choice.disabled = false;
+  });
 }
 
 function getComputerChoice() {
